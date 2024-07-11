@@ -1,0 +1,31 @@
+body{
+    background-image: url();
+    background-position: rigth contain;
+    background-repeat: no-repeat;
+}
+
+/* Estilo para la clase purple-theme */
+.purple-theme .navbar,
+.purple-theme .dropdown-menu,
+.purple-theme .dropdown-item,
+.purple-theme .navbar-toggler,
+.purple-theme .btn {
+  background-color: #008013 !important; /* Color morado */
+  color: white !important; /* Color del texto */
+  border-color: #008009 !important; /* Color del borde para elementos con borde */
+}
+
+/* Cambia el color al pasar el mouse por los elementos del menú desplegable */
+.purple-theme .dropdown-item:hover {
+  background-color: hsl(116, 73%, 15%) !important; /* Un tono más oscuro de morado para el hover */
+}
+
+/* Estilo específico para el icono del botón de alternancia */
+.purple-theme .navbar-toggler-icon {
+  background-image: none;
+}
+
+.purple-theme .navbar-toggler-icon::before {
+  content: "\2630"; /* Unicode para el icono de hamburguesa */
+  color: white;
+}

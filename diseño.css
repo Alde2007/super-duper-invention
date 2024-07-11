@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+.textos-hero{
+  height: 500px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textos-hero h1{
+  font-size: 60px;
+}
+
+.textos-hero p{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.textos-hero a{
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 15px;
+  background: #4f0101;
+  border-radius: 8px;
+  color: #fff;
+}
+
+/* Estilo para la clase purple-theme */
+.purple-theme .navbar,
+.purple-theme .dropdown-menu,
+.purple-theme .dropdown-item,
+.purple-theme .navbar-toggler,
+.purple-theme .btn {
+  background-color: #800080 !important; /* Color morado */
+  color: white !important; /* Color del texto */
+  border-color: #800080 !important; /* Color del borde para elementos con borde */
+}
+
+/* Cambia el color al pasar el mouse por los elementos del menú desplegable */
+.purple-theme .dropdown-item:hover {
+  background-color: #4b0082 !important; /* Un tono más oscuro de morado para el hover */
+}
+
+/* Estilo específico para el icono del botón de alternancia */
+.purple-theme .navbar-toggler-icon {
+  background-image: none;
+}
+
+.purple-theme .navbar-toggler-icon::before {
+  content: "\2630"; /* Unicode para el icono de hamburguesa */
+  color: white;
+}
